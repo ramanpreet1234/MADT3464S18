@@ -6,35 +6,79 @@
 
 /**
  *
- * @author ramanpreet
+ * @author Ramanpreet
  */
 public class HelloWorld {
     public static void main(String args[]){
         System.out.println("Hello Java");
-       int n1 = 10;
-       float f1 = 10.5f;
-       double d1 = 12.345456677;
-       short s1 = 12;
-       char c1 = 'a';
-       String str1 = "Java";
-       boolean b1 = true;
-       System.out.println("value of n1 is" + n1);
-       System.out.println("value of s1 is" + s1);
-       System.out.println("value of f1 is" + f1);
-       System.out.println("value of d1 is" + d1);
-       System.out.println("value of c1 is" + c1);
-       System.out.println("value of str1 is" + str1);
-       System.out.println("value of b1 is" + b1);
-       n1 *=20;
-       System.out.println("value of n1 is" +n1);
-       n1++;
-       System.out.println("value of n1 is" +n1);
-       c1 = 'a';
-        System.out.println("value of c1 is" +c1);
-        System.out.println("value of c1 is" +(c1 +10));
-        c1 = 'a';
-        //a-z 65-97
-        System.out.println("value of c1 is " + c1++);
-    }
-   
+    
+
+int n1 = 10;
+if(n1 % 2 == 0){
+System.out.println("even");
+}else{
+System.out.println("odd");
 }
+char pass ='A';
+switch(pass){
+    case 'A':
+        System.out.println("Adult pass : valid pass");
+        break;
+    case 'S':
+         System.out.println("Student pass : valid pass");
+         break;
+    case 'O':
+         System.out.println("Senior Citizen : valid pass");
+         break;
+    default:
+         System.out.println("Invalid pass");
+         break;
+}
+char pass1 = 'A';
+switch(pass){
+    case 'A':
+    case 'S':
+    case 'O':
+        System.out.println("Valid pass");
+        break;
+    default:
+        System.out.println("Invalid pass");
+        break;
+}
+n1 = 20;
+while(n1>10){
+    System.out.println("Beyond Limit");
+    n1++;
+do{
+    System.out.println("n1:" +n1);
+    n1--;
+}while (n1>10);
+    }
+int i;
+for(i=0; i<5; i++){
+    System.out.println("i: " +i);
+}
+ for(i=1; i<5; i++){   
+    for(int j=1; j<5; j++){
+        System.out.println(" * ");
+    }
+    int numbers[] = new int[5];
+    numbers[0] = 10;
+    System.out.println("number[0]: " +numbers[0]);
+    for(i=0; i<5; i++){
+        numbers[i] = (i+1);
+        System.out.println("number[" +i + "]); " +numbers[i]);
+    }
+    }
+            
+    }
+    
+}
+
+        
+        
+        
+}
+        
+    
+
