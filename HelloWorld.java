@@ -6,30 +6,26 @@
 
 /**
  *
- * @author macstudent
+ * @author Ramanpreet
  */
 public class HelloWorld {
     public static void main(String args[]){
-        System.out.println("Hello Java");
-        for(int i=1; i<=5; i++){
-            for(int j=1; j<=5; j++){
-                if(i==1 || j ==1 || i ==5 || j ==5)
-                {
-                    System.out.print("*");
-                }
-                else
-                {
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-                }
-    }  
-             
-            }
+        // TODO code application logic here
+        employee emp1 = new employee("rutvi", "toronto", 23, 
+                "E101" , "12 May 2017", 10);
         
+//        emp1.name = "rutvi";
+//        emp1.address = " toronto";
+//        emp1.age = 23;
+        System.out.println("name : " + emp1.name + "\naddress : " +
+                emp1.address + "\nage : " + emp1.age);
+        System.out.println(emp1.toString());
         
+        temporaryemployee tE1 = new temporaryemployee("sukhwinder",
+                "brampton", 22, "T123", "01 May 2018", 20,
+                "iOS Developer", 80.50f);
+        System.out.println(tE1.toString());
         
+    }
     
-    
-
+}

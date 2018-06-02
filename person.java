@@ -1,7 +1,3 @@
-
-import static java.lang.System.in;
-import java.util.Scanner;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,10 +8,17 @@ import java.util.Scanner;
  *
  * @author Ramanpreet
  */
+
+ import static java.lang.System.in;
+import java.util.Scanner;
+
+
+
 public class person {
     String name;
     String address;
     int age;
+    Scanner in = new Scanner(System.in);
     
     
     void setname(String nm){
@@ -60,5 +63,10 @@ public class person {
        return data;
         
     }
+
+    private void setname() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
+    
