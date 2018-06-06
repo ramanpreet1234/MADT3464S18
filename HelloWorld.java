@@ -9,23 +9,20 @@
  * @author Ramanpreet
  */
 public class HelloWorld {
-    public static void main(String args[]){
+    public static void main(String[] args){
         // TODO code application logic here
-        employee emp1 = new employee("rutvi", "toronto", 23, 
-                "E101" , "12 May 2017", 10);
+        testA obj1 = new testA();
+        obj1.display();
+       // obj1.show();
+        obj1.output();
         
-//        emp1.name = "rutvi";
-//        emp1.address = " toronto";
-//        emp1.age = 23;
-        System.out.println("name : " + emp1.name + "\naddress : " +
-                emp1.address + "\nage : " + emp1.age);
-        System.out.println(emp1.toString());
+        int x = obj1.number;
+        System.out.println(" x : " + x);
+       
+       // obj1.number = 20;
         
-        temporaryemployee tE1 = new temporaryemployee("sukhwinder",
-                "brampton", 22, "T123", "01 May 2018", 20,
-                "iOS Developer", 80.50f);
-        System.out.println(tE1.toString());
-        
+       
     }
+    
     
 }
